@@ -111,4 +111,8 @@ Next, define the child routes for the Products module in src/app/products/produc
 In the AppComponent template (src/app/app.component.html), add navigation links for "Products" and "Orders" and include the <router-outlet> to display the routed components. 
 To verify lazy loading, run the application with ng serve and open your browser's Developer Tools, specifically the Network tab. Observe that initially, only the main application bundles are loaded. When you navigate to the "Products" or "Orders" links, new JavaScript chunks should be downloaded in the Network tab, confirming lazy loading. Revisiting a route will not re-download the chunk. 
 Common debugging steps for lazy loading issues include checking for incorrect paths in loadChildren, ensuring modules export necessary components, and avoiding accidental imports of lazy-loaded modules into eagerly loaded ones. Use the browser's Network tab for 404 errors and the Console for JavaScript errors. AOT compilation and tools like Webpack Bundle Analyzer can assist in identifying problems early and understanding bundle composition. 
-Implementing lazy loading and utilizing these debugging techniques can improve your Angular application's performance. 
+Implementing lazy loading and utilizing these debugging techniques can improve your Angular application's performance.
+
+====================== Store =====================================
+npm install @ngrx/store --save --force
+Link: https://www.syncfusion.com/blogs/post/angular-state-management-ngrx
