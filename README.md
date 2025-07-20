@@ -93,6 +93,9 @@ This fosters loose coupling between components, making the code more modular, te
 Services, which encapsulate business logic and data access, are typically made available to components via dependency injection, allowing components to focus on UI concerns. 
 By following these steps, Angular efficiently compiles, bootstraps, renders, and manages your web application, providing a dynamic and responsive user experience.
 
+======================Angular material======================================================
+npm install @angular/material --legacy-peer-deps
+
 ====================Modules========================================
 Reference link: https://medium.com/@jaydeepvpatil225/feature-module-with-lazy-loading-in-angular-15-53bb8e15d193
 1. Project setup
