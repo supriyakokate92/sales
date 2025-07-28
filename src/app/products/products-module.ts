@@ -6,6 +6,11 @@ import { ProductList } from './product-list/product-list';
 import { ProductDetail } from './product-detail/product-detail';
 
 
+import { FormsModule } from '@angular/forms';
+import { MatButtonModule } from '@angular/material/button';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatTableModule } from '@angular/material/table';
+
 @NgModule({
   declarations: [
     ProductList,
@@ -13,7 +18,11 @@ import { ProductDetail } from './product-detail/product-detail';
   ],
   imports: [
     CommonModule,
-    ProductsRoutingModule
+    ProductsRoutingModule,
+    MatTableModule,
+    MatCheckboxModule,
+    FormsModule,
+    MatButtonModule
   ]
 })
 export class ProductsModule { }

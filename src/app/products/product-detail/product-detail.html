@@ -1,1 +1,16 @@
-<p>product-detail works!</p>
+<div *ngIf="product" class="product-detail-card">
+    <h2>{{ product.name }} Details</h2>
+    <p><strong>ID:</strong> {{ product.id }}</p>
+    <p><strong>Price:</strong> {{ product.price | currency }}</p>
+    <p><strong>Category:</strong> {{ product.category }}</p>
+    <p><strong>Description:</strong> {{ product.description }}</p>
+    <p><strong>In Stock:</strong> {{ product.inStock ? 'Yes' : 'No' }}</p>
+    <p><strong>Release Date:</strong> {{ product.releaseDate | date }}</p>
+    <button mat-raised-button color="primary" (click)="goBackToList()">Back to List</button>
+  </div>
+  
+  <div *ngIf="!product">
+    <p>Product not found.</p>
+    <button mat-raised-button color="primary" (click)="goBackToList()">Back to List</button>
+  </div>
+  
